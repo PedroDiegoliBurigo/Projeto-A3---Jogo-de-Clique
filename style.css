@@ -21,15 +21,7 @@ header p {
     font-size: 40px;    
 }
 
-#body1 {
-    display: flex;
-    align-items: center;
-    width: 70%;
-}
-
-#body2 {
-    display: flex;
-    text-align: end;
-    justify-items: end;
-    width: 30%;
+#btpontos {
+    background-color: transparent;
+    border: none;
 }

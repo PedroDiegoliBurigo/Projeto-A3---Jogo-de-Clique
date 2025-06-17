@@ -11,12 +11,13 @@
         <h1>Banana Clicker 5000</h1>
         <p>Faça chover bananas!</p>
     </header>
+    <main>
     <!-- Body 1 70% da tela body 2 30% da tela / body 2 onde vai ficar  -->
     <div class="containers" id="body1">
         <h2 id="mostraPontos">Pontos: 0</h2>
         <h3 id="poderClique">Pontos por clique</h3>
         <h3 id="pontoSegundo">Pontos gerados por segundo</h3>
-        <button onclick="aumentarPontos ()">
+        <button id="btpontos" onclick="aumentarPontos ()">
             <img src="assets/000-BananaFarm-removebg-preview.png" alt="">
         </button>
     </div> 
@@ -27,31 +28,32 @@
         </div>
         <hr>
         <div>
-            <h2>Loja</h2>
-            <h3 id="quanto1">Poder1 = 0</h3>
-            <h3 id="quanto2">Poder2 = 0</h3>
-            <h3 id="quanto3">Poder3 = 0</h3>
+            <h2>Quantidade de cada poder:</h2>
+            <h3 id="quanto1">Possui 0 poder1</h3>
+            <h3 id="quanto2">Possui 0 poder2</h3>
+            <h3 id="quanto3">Possui 0 poder3</h3>
             <hr>
+            <h2>Loja</h2>
             <div>
                 <h3 id="custo1">Custo = 0</h3>
                 
                 <button onclick="poder1 ()">+1 pontos por clique</button>
             </div>
-            <div>
-                <h3 id="custo3">Custo = 0</h3>
-                
-                <button onclick="poder3 ()">+20 pontos por clique</button>
-            </div>
+            
 
             <div>
                 <h3 id="custo2">Custo = 0</h3>
                 
                 <button onclick="poder2 ()">Gerador por segundo</button>
             </div>
-            
+            <div>
+                <h3 id="custo3">Custo = 0</h3>
+                
+                <button onclick="poder3 ()">+20 pontos por clique</button>
+            </div>
         </div>
     </div>    
-
+    </main>
     <script src="script.js"></script>
 
 </body>
