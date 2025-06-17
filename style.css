@@ -20,8 +20,24 @@ header p {
     display: flex  ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;    
+    padding: 15px;
+    margin-bottom: 15px;
 }
+
 #btpontos {
     background-color: transparent;
     border: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#body2 {
+    width: 30%;
+    justify-items: flex-end;
+    justify-content: end;
+    text-align: center;
+    display: block;
 }
