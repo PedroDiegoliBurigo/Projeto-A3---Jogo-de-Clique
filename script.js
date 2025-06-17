@@ -49,6 +49,13 @@ function poder1 () {
     if (quant1 >= 5) {
         img1.src = "assets/bananafarm33.png";
     }
+    if (quant1 >= 10) {
+        img1.src = "assets/bananafarm44.png";
+    }
+    if (quant1 >= 25) {
+        img1.src = "assets/bananafarm55.png";
+    }
+
 }
 
 function poder3 () {
