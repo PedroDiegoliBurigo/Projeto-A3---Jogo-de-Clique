@@ -1,12 +1,18 @@
+// infomações basicas
 let pontos = 0;
 let pontosPorClique = 1;
-
+// primeiro poder variaveis
 let custoPoder1 = 10;
 let quant1 = 0;
-
+// segundo poder variaveis
 let PS = 0;
 let custoPoder2 = 50;
 let quant2 = 0;
+// terceiro poder variaveis
+let custoPoder3 = 100;
+let quant3 = 0; 
+
+
 
 document.getElementById('custo1').innerText = 'Custo = '+ custoPoder1;
 document.getElementById('custo2').innerText = 'Custo = '+ custoPoder2;
@@ -44,7 +50,6 @@ function poder2 () {
         custoPoder2 = Math.floor(custoPoder2 * 1.5);
         telaPontos ();
         document.getElementById('custo2').innerText = 'Custo = '+ custoPoder2 ;
-        document.getElementById('pontoSegundo').innerText = 'Pontos gerador por segundo = ' + PS ;
         document.getElementById('quanto2').innerText =' Poder2 = ' + quant2;
     } else {
         alert ('Pontos insuficientes');
@@ -58,7 +63,7 @@ function geradorPoder2 () {
 
 function telaPontos () {
     document.getElementById('mostraPontos').innerText = "Pontos = " + pontos ;
-    document.getElementById('pontoSegundo').innerText = 'Pontos gerados por segundo' + PS;
+    document.getElementById('pontoSegundo').innerText = 'Pontos gerados por segundo = ' + PS;
 }
 
 setInterval (geradorPoder2, 1000);
