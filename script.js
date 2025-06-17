@@ -37,7 +37,7 @@ function poder1 () {
 }
 
 function poder2 () {
-    if ( pontos -= custoPoder2) {
+    if ( pontos >= custoPoder2) {
         pontos -=custoPoder2;
         PS += 1;
         quant2 += 1;
