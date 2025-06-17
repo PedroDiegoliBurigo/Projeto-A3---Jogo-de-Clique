@@ -15,7 +15,7 @@ function aumentarPontos () {
     pontos += pontosPorClique;
     document.getElementById('mostraPontos').innerText = "Pontos = " + pontos ;
     if ( pontos >= 500 ) {
-        alert ('Você acabou o jogo, parabéns! Mas caso queria você ainda pode continuar a jogar.')
+        // alert ('Você acabou o jogo, parabéns! Mas caso queria você ainda pode continuar a jogar.')
     }
 }
 
