@@ -10,7 +10,8 @@ let custoPoder2 = 50;
 let quant2 = 0;
 // terceiro poder variaveis
 let custoPoder3 = 100;
-let quant3 = 0; 
+let quant3 = 0;
+
 
 document.getElementById('custo1').innerText = 'Custo = '+ custoPoder1;
 document.getElementById('custo2').innerText = 'Custo = '+ custoPoder2;
@@ -19,9 +20,18 @@ document.getElementById('custo3').innerText = 'Custo = '+ custoPoder3;
 function aumentarPontos () {
     pontos += pontosPorClique;
     document.getElementById('mostraPontos').innerText = "Pontos = " + pontos ;
+    const img1 = document.getElementById('img1');
+    if (quant1 >= 3) {
+        img1.src = "assets/bananafarm22.png";
+    }
+    if (quant1 >= 5) {
+        img1.src = "assets/bananafarm3.png";
+    }
+
     if ( pontos >= 500 ) {
         // alert ('Você acabou o jogo, parabéns! Mas caso queria você ainda pode continuar a jogar.')
     }
+
 }
 
 function poder1 () {
@@ -75,7 +85,7 @@ function geradorPoder2 () {
 }
 
 function telaPontos () {
-    document.getElementById('mostraPontos').innerText = "Pontos = " + pontos ;
+    document.getElementById('mostraPontos').innerText = "Pontos = " + pontos ;      
     document.getElementById('pontoSegundo').innerText = 'Pontos gerados por segundo = ' + PS;
 }
 
