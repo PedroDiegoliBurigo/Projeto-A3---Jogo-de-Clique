@@ -42,6 +42,20 @@ function poder1 () {
     }       
 }
 
+function poder3 () {
+    if ( pontos >= custoPoder3) {
+        pontos -= custoPoder3;
+        pontosPorClique += 20;
+        quant3 += 1;
+        telaPontos ();
+        custoPoder3 = Math.floor(custoPoder3 * 1.8);
+        document.getElementById('custo3').innerText = 'Custo = '+ custoPoder3;
+        document.getElementById('quanto3').innerText='Poder3 = ' + quant3;
+        document.getElementById('poderClique').innerText = 'Pontos por clique = '+ pontosPorClique;
+        
+    }
+}
+
 function poder2 () {
     if ( pontos >= custoPoder2) {
         pontos -=custoPoder2;
