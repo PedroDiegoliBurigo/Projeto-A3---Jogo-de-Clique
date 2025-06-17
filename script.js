@@ -1,15 +1,22 @@
+// infomações basicas
 let pontos = 0;
 let pontosPorClique = 1;
-
+// primeiro poder variaveis
 let custoPoder1 = 10;
 let quant1 = 0;
-
+// segundo poder variaveis
 let PS = 0;
 let custoPoder2 = 50;
 let quant2 = 0;
+// terceiro poder variaveis
+let custoPoder3 = 100;
+let quant3 = 0; 
+
+
 
 document.getElementById('custo1').innerText = 'Custo = '+ custoPoder1;
 document.getElementById('custo2').innerText = 'Custo = '+ custoPoder2;
+document.getElementById('custo3').innerText = 'Custo = '+ custoPoder3;
 
 function aumentarPontos () {
     pontos += pontosPorClique;
@@ -28,12 +35,26 @@ function poder1 () {
         telaPontos ();
         custoPoder1 = Math.floor(custoPoder1 * 1.2);
         document.getElementById('custo1').innerText = 'Custo = '+ custoPoder1;
-        document.getElementById('poderClique').innerText = 'Pontos por Clique = '+ pontosPorClique;
+        document.getElementById('poderClique').innerText = 'Pontos por clique = '+ pontosPorClique;
         document.getElementById('quanto1').innerText =' Poder1 = ' + quant1;
         
     } else {
         alert ('Pontos insuficientes');
     }       
+}
+
+function poder3 () {
+    if ( pontos >= custoPoder3) {
+        pontos -= custoPoder3;
+        pontosPorClique += 20;
+        quant3 += 1;
+        telaPontos ();
+        custoPoder3 = Math.floor(custoPoder3 * 1.8);
+        document.getElementById('custo3').innerText = 'Custo = '+ custoPoder3;
+        document.getElementById('quanto3').innerText='Poder3 = ' + quant3;
+        document.getElementById('poderClique').innerText = 'Pontos por clique = '+ pontosPorClique;
+        
+    }
 }
 
 function poder2 () {
@@ -44,7 +65,6 @@ function poder2 () {
         custoPoder2 = Math.floor(custoPoder2 * 1.5);
         telaPontos ();
         document.getElementById('custo2').innerText = 'Custo = '+ custoPoder2 ;
-        document.getElementById('pontoSegundo').innerText = 'Pontos gerador por segundo = ' + PS ;
         document.getElementById('quanto2').innerText =' Poder2 = ' + quant2;
     } else {
         alert ('Pontos insuficientes');
@@ -58,7 +78,7 @@ function geradorPoder2 () {
 
 function telaPontos () {
     document.getElementById('mostraPontos').innerText = "Pontos = " + pontos ;
-    document.getElementById('pontoSegundo').innerText = 'Pontos gerados por segundo' + PS;
+    document.getElementById('pontoSegundo').innerText = 'Pontos gerados por segundo = ' + PS;
 }
 
 setInterval (geradorPoder2, 1000);
