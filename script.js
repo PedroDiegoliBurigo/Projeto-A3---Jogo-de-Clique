@@ -36,7 +36,7 @@ function poder1 () {
         custoPoder1 = Math.floor(custoPoder1 * 1.2);
         document.getElementById('custo1').innerText = 'Custo = '+ custoPoder1;
         document.getElementById('poderClique').innerText = 'Pontos por clique = '+ pontosPorClique;
-        document.getElementById('quanto1').innerText =' Poder1 = ' + quant1;
+        document.getElementById('quanto1').innerText ='Possui ' + quant1 + ' poder1';
         
     } else {
         alert ('Pontos insuficientes');
@@ -51,7 +51,7 @@ function poder3 () {
         telaPontos ();
         custoPoder3 = Math.floor(custoPoder3 * 1.8);
         document.getElementById('custo3').innerText = 'Custo = '+ custoPoder3;
-        document.getElementById('quanto3').innerText='Poder3 = ' + quant3;
+        document.getElementById('quanto3').innerText='Possui ' + quant3 + ' poder3';
         document.getElementById('poderClique').innerText = 'Pontos por clique = '+ pontosPorClique;
         
     }
@@ -65,7 +65,7 @@ function poder2 () {
         custoPoder2 = Math.floor(custoPoder2 * 1.5);
         telaPontos ();
         document.getElementById('custo2').innerText = 'Custo = '+ custoPoder2 ;
-        document.getElementById('quanto2').innerText =' Poder2 = ' + quant2;
+        document.getElementById('quanto2').innerText ='Possui ' + quant2 + 'poder2';
     } else {
         alert ('Pontos insuficientes');
     }
