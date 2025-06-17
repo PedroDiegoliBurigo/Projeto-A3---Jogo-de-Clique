@@ -34,6 +34,7 @@ function poder1 () {
         pontosPorClique += 1;
         quant1 += 1;
         telaPontos ();
+        visual ();
         custoPoder1 = Math.floor(custoPoder1 * 1.2);
         document.getElementById('custo1').innerText = 'Custo = '+ custoPoder1;
         document.getElementById('poderClique').innerText = 'Pontos por clique = '+ pontosPorClique;
@@ -42,20 +43,23 @@ function poder1 () {
     } else {
         alert ('Pontos insuficientes');
     }
+}
 
-    if (quant1 >= 3) {
-        img1.src = "assets/bananafarm22.png";
-    }
-    if (quant1 >= 5) {
-        img1.src = "assets/bananafarm33.png";
-    }
-    if (quant1 >= 10) {
-        img1.src = "assets/bananafarm44.png";
-    }
-    if (quant1 >= 25) {
-        img1.src = "assets/bananafarm55.png";
-    }
-
+function visual () {
+    
+if (quant1 >= 3) {
+    img1.src = "assets/bananafarm22.png";
+}
+if (quant1 >= 5) {
+    img1.src = "assets/bananafarm33.png";
+}
+if (quant1 >= 10) {
+    img1.src = "assets/bananafarm44.png";
+}
+if (quant1 >= 25) {
+    img1.src = "assets/bananafarm55.png";
+}
+ 
 }
 
 function poder3 () {
