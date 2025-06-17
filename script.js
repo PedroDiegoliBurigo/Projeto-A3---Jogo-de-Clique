@@ -25,7 +25,7 @@ function aumentarPontos () {
         img1.src = "assets/bananafarm22.png";
     }
     if (quant1 >= 5) {
-        img1.src = "assets/bananafarm3.png";
+        img1.src = "assets/bananafarm33.png";
     }
 
     if ( pontos >= 500 ) {
