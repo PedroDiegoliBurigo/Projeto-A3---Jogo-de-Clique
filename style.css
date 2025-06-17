@@ -20,3 +20,16 @@ header p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;    
 }
+
+#body1 {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+#body2 {
+    display: flex;
+    text-align: end;
+    justify-items: end;
+    width: 30%;
+}
