@@ -20,14 +20,6 @@ document.getElementById('custo3').innerText = 'Custo = '+ custoPoder3;
 function aumentarPontos () {
     pontos += pontosPorClique;
     document.getElementById('mostraPontos').innerText = "Pontos = " + pontos ;
-    const img1 = document.getElementById('img1');
-    if (quant1 >= 3) {
-        img1.src = "assets/bananafarm22.png";
-    }
-    if (quant1 >= 5) {
-        img1.src = "assets/bananafarm33.png";
-    }
-
     if ( pontos >= 500 ) {
         // alert ('Você acabou o jogo, parabéns! Mas caso queria você ainda pode continuar a jogar.')
     }
@@ -35,6 +27,7 @@ function aumentarPontos () {
 }
 
 function poder1 () {
+    const img1 = document.getElementById('img1');
     if ( pontos >= custoPoder1) {
 
         pontos -= custoPoder1;
@@ -48,7 +41,14 @@ function poder1 () {
         
     } else {
         alert ('Pontos insuficientes');
-    }       
+    }
+
+    if (quant1 >= 3) {
+        img1.src = "assets/bananafarm22.png";
+    }
+    if (quant1 >= 5) {
+        img1.src = "assets/bananafarm33.png";
+    }
 }
 
 function poder3 () {
