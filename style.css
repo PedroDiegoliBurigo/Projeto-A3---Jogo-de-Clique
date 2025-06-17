@@ -1,6 +1,7 @@
 *   {
     margin: 0;
     padding: 0;
+    background-color: antiquewhite;
 }
 
 header h1 {
@@ -19,9 +20,69 @@ header p {
     display: flex  ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;    
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
 #btpontos {
     background-color: transparent;
     border: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#body1 {
+    width: 60%;
+    justify-content: flex-start;
+}
+
+#body2 {
+    width: 30%;
+    justify-items: flex-end;
+    justify-content: end;
+    text-align: center;
+    display: block;
+}
+
+.loja {
+    padding: 10px 0px 10px 0px;
+}
+
+.primeirocusto {
+    padding-bottom: 8px;
+}
+
+.segundocusto {
+    padding-bottom: 8px;
+}
+
+.terceirocusto {
+    padding-bottom: 8px;
+}
+
+.quantpoder {
+    padding: 8px;
+}
+
+#quanto2 {
+    padding: 5px 0px 5px 0px;
+}
+
+#quanto3 {
+    padding-bottom: 8px;
+}
+
+#mostraPontos {
+    padding-bottom: 5px;
+}
+
+#poderClique {
+    padding-bottom: 5px;
+}
+
+#pontoSegundo {
+    padding-bottom: 5px;
 }
