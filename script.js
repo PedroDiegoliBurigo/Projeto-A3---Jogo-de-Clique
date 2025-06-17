@@ -84,7 +84,7 @@ function poder2 () {
         custoPoder2 = Math.floor(custoPoder2 * 1.5);
         telaPontos ();
         document.getElementById('custo2').innerText = 'Custo = '+ custoPoder2 ;
-        document.getElementById('quanto2').innerText ='Possui ' + quant2 + 'poder2';
+        document.getElementById('quanto2').innerText ='Possui ' + quant2 + ' poder2';
     } else {
         alert ('Pontos insuficientes');
     }
