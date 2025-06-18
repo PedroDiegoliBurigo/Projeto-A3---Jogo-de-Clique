@@ -35,10 +35,10 @@ main {
 }
 
 #body1 {
+    padding: 3% 5% 5% 5%;
     border: 2px solid black;
     width: 40%;
     justify-content: flex-start;
-    padding: 10%;
     text-align: center;
     border-radius: 20px;
 }
@@ -95,4 +95,12 @@ main {
 
 footer {
     margin-top: 20px;
+}
+.BTUP {
+    padding: 2%;
+    border-radius: 20px;
+    width: 90%;
+}
+.nameUP{
+    font-size: 162%;
 }

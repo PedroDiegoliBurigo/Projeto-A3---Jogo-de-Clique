@@ -46,17 +46,18 @@ function poder1 () {
 }
 
 function visual () {
-    
-if (quant1 >= 3) {
+    let totalUp = quant1 + quant2 + quant3;
+
+if (totalUp >= 3) {
     img1.src = "assets/bananafarm22.png";
 }
-if (quant1 >= 5) {
+if (totalUp >= 5) {
     img1.src = "assets/bananafarm33.png";
 }
-if (quant1 >= 10) {
+if (totalUp >= 10) {
     img1.src = "assets/bananafarm44.png";
 }
-if (quant1 >= 25) {
+if (totalUp >= 25) {
     img1.src = "assets/bananafarm55.png";
 }
  
@@ -68,6 +69,7 @@ function poder3 () {
         pontosPorClique += 20;
         quant3 += 1;
         telaPontos ();
+        visual ();
         custoPoder3 = Math.floor(custoPoder3 * 1.8);
         document.getElementById('custo3').innerText = 'Custo = '+ custoPoder3;
         document.getElementById('quanto3').innerText='Possui ' + quant3 + ' poder3';
@@ -83,6 +85,7 @@ function poder2 () {
         quant2 += 1;
         custoPoder2 = Math.floor(custoPoder2 * 1.5);
         telaPontos ();
+        visual ();
         document.getElementById('custo2').innerText = 'Custo = '+ custoPoder2 ;
         document.getElementById('quanto2').innerText ='Possui ' + quant2 + ' poder2';
     } else {
