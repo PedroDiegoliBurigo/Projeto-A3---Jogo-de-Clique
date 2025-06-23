@@ -1,7 +1,12 @@
 *   {
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
+}
+
+body {
+    background-image: url(assets/selvabg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 header h1 {
@@ -11,6 +16,7 @@ header h1 {
     display: flex  ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 80px;
+    z-index: 1;
 }
 
 header p {
@@ -41,6 +47,7 @@ main {
     justify-content: flex-start;
     text-align: center;
     border-radius: 20px;
+    background-color: antiquewhite;
 }
 
 
@@ -52,6 +59,7 @@ main {
     border: 2px solid black;
     padding: 2%;
     border-radius: 20px;
+    background-color: antiquewhite;
 }
 
 .loja {
