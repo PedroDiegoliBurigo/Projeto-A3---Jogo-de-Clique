@@ -77,7 +77,7 @@ function poder3 () {
 function poder2 () {
     if ( pontos >= custoPoder2) {
         pontos -=custoPoder2;
-        PS += 1;
+        PS += 15;
         quant2 += 1;
         custoPoder2 = Math.floor(custoPoder2 * 1.5);
         telaPontos ();
