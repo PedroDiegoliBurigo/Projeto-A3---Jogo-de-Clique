@@ -58,6 +58,7 @@ if (totalUp >= 25) {
 }
 
 function poder3 () {
+
     if ( pontos >= custoPoder3) {
         pontos -= custoPoder3;
         pontosPorClique += 20;
@@ -68,7 +69,8 @@ function poder3 () {
         document.getElementById('custo3').innerText = 'Custo = '+ custoPoder3;
         document.getElementById('quanto3').innerText='Possui ' + quant3 + ' poder3';
         document.getElementById('poderClique').innerText = 'Pontos por clique = '+ pontosPorClique;
-        
+    } else {
+        alert('Pontos insuficientes');
     }
 }
 
