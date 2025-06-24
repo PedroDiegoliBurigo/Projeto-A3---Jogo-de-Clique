@@ -13,9 +13,7 @@ let custoPoder3 = 100;
 let quant3 = 0;
 
 
-document.getElementById('custo1').innerText = 'Custo = '+ custoPoder1;
-document.getElementById('custo2').innerText = 'Custo = '+ custoPoder2;
-document.getElementById('custo3').innerText = 'Custo = '+ custoPoder3;
+
 
 function aumentarPontos () {
     pontos += pontosPorClique;
