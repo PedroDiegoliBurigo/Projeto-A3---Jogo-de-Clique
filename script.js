@@ -20,10 +20,6 @@ document.getElementById('custo3').innerText = 'Custo = '+ custoPoder3;
 function aumentarPontos () {
     pontos += pontosPorClique;
     document.getElementById('mostraPontos').innerText = "Pontos = " + pontos ;
-    // if ( pontos >= 500 ) {
-        // alert ('Você acabou o jogo, parabéns! Mas caso queria você ainda pode continuar a jogar.')
-    
-
 }
 
 function poder1 () {
@@ -101,6 +97,22 @@ function geradorPoder2 () {
 function telaPontos () {
     document.getElementById('mostraPontos').innerText = "Pontos = " + pontos ;      
     document.getElementById('pontoSegundo').innerText = 'Pontos gerados por segundo = ' + PS;
+
+    if ( pontos >= 5000 ) {
+        alert('Você alcançou 5000 pontos e venceu o jogo!');
+        Fim ();
+    }
+
 }
 
-setInterval (geradorPoder2, 1000);
+const intervalo = setInterval (geradorPoder2, 1000);
+
+function Fim () {
+    document.getElementById('botaoClique').disabled = true;
+    document.getElementById('botaoPoder1').disabled = true;
+    document.getElementById('botaoPoder2').disabled = true;
+    document.getElementById('botaoPoder3').disabled = true;
+
+    clearInterval(intervaloPS);
+
+}
